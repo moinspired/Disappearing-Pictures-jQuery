@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+    img {
+    width: 200px;
+    height: 200px;
+    }
+    .wrapper {
+        width: 970px;
+        background-color: #e7dfb7;
+    }
+    button{
+        display: block;
+         background: #bac5cc;
+          background-image: -webkit-linear-gradient(top, #bac5cc, #2980b9);
+          background-image: -moz-linear-gradient(top, #bac5cc, #2980b9);
+          background-image: -ms-linear-gradient(top, #bac5cc, #2980b9);
+          background-image: -o-linear-gradient(top, #bac5cc, #2980b9);
+          background-image: linear-gradient(to bottom, #bac5cc, #2980b9);
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 28px;
+          font-family: Courier New;
+          color: #3d143d;
+          font-size: 24px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $('img').click(function(){
+        $(this).hide();
+    });
+
+    $("#show").click(function(){
+        $("img").show();
+    });
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+    <img id= "image1"  src="image/chef.jpg" alt="img">
+    <img src="image/sandwich.jpg" alt="img">
+    <img src="image/salmon.jpg" alt="img">
+    <img src="image/wine.jpg" alt="img">
+
+    <img src="image/croissant.jpg" alt="img">
+    <img src="image/gondol.jpg" alt="img">
+    <img src="image/popsicle.jpg" alt="img">
+    <img src="image/workshop.jpg" alt="img">
+
+    <button id="show">Show</button>
+</div>
+</body>
+</html>
